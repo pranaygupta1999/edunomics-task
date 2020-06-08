@@ -1,26 +1,61 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
+import { Container, Row, Col } from 'reactstrap';
+import Header from "./components/Header"
+import Sidebar from "./components/Sidebar"
+import Home from "./components/Home";
+import Sessions from "./components/Sessions";
+import Downloads from "./components/Downloads";
+import Settings from "./components/Settings";
+import About from "./components/About";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  state = {
+    currentPage: "Home"
+  }
+  render() {
+    return (
+      <Router>
+        <div>
+          <Header title="Home" />
+          <Container fluid={true}>
+            <Row>
+              <Col xs="3" style={{padding: 0}}>
+                <Sidebar />
+              </Col>
+            <Col xs="auto">
+
+                <Switch>
+                  <Route path="/Sessions">
+                    <Sessions />
+                  </Route>
+                  <Route path="/Downloads">
+                    <Downloads />
+                  </Route>
+                  <Route path="/Settings">
+                    <Settings />
+                  </Route>
+                  <Route path="/About">
+                    <About />
+                  </Route>
+                  <Route path="/">
+                    <Home />
+                  </Route>
+                </Switch>
+              </Col>
+            </Row>
+          </Container>
+        </div>
+      </Router>
+    );
+  }
+
 }
 
 export default App;

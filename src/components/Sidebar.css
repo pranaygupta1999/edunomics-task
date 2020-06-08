@@ -1,0 +1,15 @@
+.vertical-nav-bar {
+    height: 100vh;
+    background-color: green;
+    color: white;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+.vertical-nav-bar a{
+    text-decoration: none;
+    color: white;
+}
+.vertical-nav-bar a:hover{
+    text-decoration: none;
+    color: lightgray;
+}
