@@ -1,0 +1,12 @@
+.btn-account {
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+    background-color: transparent !important;
+    border-radius: 25px !important;
+    box-shadow: 1px 1px 1px #aaa !important;
+    color: black !important;
+}
+.btn-account:hover{
+    background-color: whitesmoke !important;
+    box-shadow: 1px 2px 3px #aaa !important;
+}
