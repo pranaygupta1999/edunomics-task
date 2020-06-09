@@ -1,0 +1,10 @@
+.top-content {
+    background-color: gray;
+    height: 50vh;
+}
+.body-card{
+    height: 150px;
+}
+.bottom-content{
+    padding: 30px;
+}
