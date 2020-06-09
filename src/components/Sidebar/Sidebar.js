@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import "./Sidebar.css"
 export default function sidebar(props) {
     return (
-        <div>
             <Nav vertical className="vertical-nav-bar">
                 <NavItem>
                     <NavLink ><Link to="/">Home</Link></NavLink>
@@ -21,7 +20,6 @@ export default function sidebar(props) {
                 <NavItem>
                     <NavLink><Link to="/About">About</Link></NavLink>
                 </NavItem>
-            </Nav>
-        </div>
+            </Nav> 
     )
 }

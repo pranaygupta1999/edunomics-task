@@ -26,7 +26,7 @@ class App extends Component {
           <Header title="Home" />
           <Container fluid={true}>
             <Row>
-              <Col xs="3" style={{ padding: 0 }}>
+              <Col xs="3" style={{ padding: 0 }} className="full-height">
                 <Sidebar />
               </Col>
               <Col style={{ padding: 0 }}>
