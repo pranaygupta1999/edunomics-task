@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import './App.css';
+import './Style.css';
 import { Container, Row, Col } from 'reactstrap';
-import Header from "./components/Header"
-import Sidebar from "./components/Sidebar"
-import Home from "./components/Home";
+import Header from "./components/Header/Header"
+import Sidebar from "./components/Sidebar/Sidebar"
+import Home from "./components/Home/Home";
 import Sessions from "./components/Sessions";
 import Downloads from "./components/Downloads";
 import Settings from "./components/Settings";
@@ -26,11 +26,10 @@ class App extends Component {
           <Header title="Home" />
           <Container fluid={true}>
             <Row>
-              <Col xs="3" style={{padding: 0}}>
+              <Col xs="3" style={{ padding: 0 }}>
                 <Sidebar />
               </Col>
-            <Col xs="auto">
-
+              <Col style={{ padding: 0 }}>
                 <Switch>
                   <Route path="/Sessions">
                     <Sessions />
