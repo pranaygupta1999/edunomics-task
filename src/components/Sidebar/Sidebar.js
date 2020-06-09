@@ -1,24 +1,24 @@
 import React from 'react';
-import { Nav, NavItem, NavLink } from 'reactstrap';
+import { Nav, NavItem } from 'reactstrap';
 import { Link } from "react-router-dom";
 import "./Sidebar.css"
 export default function sidebar(props) {
     return (
             <Nav vertical className="vertical-nav-bar">
                 <NavItem>
-                    <NavLink ><Link to="/">Home</Link></NavLink>
+                    <Link className="nav-link" to="/">Home</Link>
                 </NavItem>
                 <NavItem>
-                    <NavLink><Link to="/Sessions">Sessions</Link></NavLink>
+                    <Link className="nav-link" to="/Sessions">Sessions</Link>
                 </NavItem>
                 <NavItem>
-                    <NavLink><Link to="/Downloads">Downloads</Link></NavLink>
+                    <Link className="nav-link" to="/Downloads">Downloads</Link>
                 </NavItem>
                 <NavItem>
-                    <NavLink><Link to="/Settings">Settings</Link></NavLink>
+                    <Link className="nav-link" to="/Settings">Settings</Link>
                 </NavItem>
                 <NavItem>
-                    <NavLink><Link to="/About">About</Link></NavLink>
+                    <Link className="nav-link" to="/About">About</Link>
                 </NavItem>
             </Nav> 
     )

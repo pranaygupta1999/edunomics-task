@@ -6,9 +6,6 @@ import {
     NavbarToggler,
     NavbarBrand,
     Nav,
-    Button,
-    NavItem,
-    NavLink,
     UncontrolledDropdown,
     DropdownToggle,
     DropdownMenu,
@@ -25,8 +22,8 @@ const dropdownphy11 = (
             Physics
         </DropdownToggle>
         <DropdownMenu>
-            {phy11.map(element => (
-                <DropdownItem>
+            {phy11.map((element, index) => (
+                <DropdownItem key={index}>
                     {element}
                 </DropdownItem>
             )
@@ -41,9 +38,9 @@ const dropdownphy12 = (
             Physics
         </DropdownToggle>
         <DropdownMenu>
-            {phy12.map(element =>
+            {phy12.map((element, index) =>
                 (
-                    <DropdownItem>
+                    <DropdownItem key={index}>
                         {element}
                     </DropdownItem>
                 )
@@ -58,9 +55,9 @@ const dropdownmath11 = (
             Math
         </DropdownToggle>
         <DropdownMenu>
-            {math11.map(element =>
+            {math11.map((element, index) =>
                 (
-                    <DropdownItem>
+                    <DropdownItem key={index}>
                         {element}
                     </DropdownItem>
                 )
@@ -75,9 +72,9 @@ const dropdownmath12 = (
             Math
         </DropdownToggle>
         <DropdownMenu>
-            {math12.map(element =>
+            {math12.map((element, index) =>
                 (
-                    <DropdownItem>
+                    <DropdownItem key={index}>
                         {element}
                     </DropdownItem>
                 )

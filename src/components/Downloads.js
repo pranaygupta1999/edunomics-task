@@ -1,6 +1,5 @@
 import React from 'react';
 import { Container, Row } from "reactstrap";
-import { withRouter } from 'react-router-dom';
 const Downloads = (props) => {
     return (
         <Container fluid={true}>

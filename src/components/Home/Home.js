@@ -12,13 +12,13 @@ const Home = (props) => {
                         <Row >
                             <Col>
                                 <Card>
-                                    <img src="https://via.placeholder.com/28" />
+                                    <img alt="icon" src="https://via.placeholder.com/28" />
                                     <span>All interactive sessions</span>
                                 </Card>
                             </Col>
                             <Col>
                                 <Card>
-                                    <img src="https://via.placeholder.com/28" />
+                                    <img alt="icon" src="https://via.placeholder.com/28" />
                                     <span>Practice Questions</span>
                                 </Card>
                             </Col>
@@ -26,13 +26,13 @@ const Home = (props) => {
                         <Row >
                             <Col>
                                 <Card>
-                                    <img src="https://via.placeholder.com/28" />
+                                    <img alt="icon" src="https://via.placeholder.com/28" />
                                     <span>Downloads</span>
                                 </Card>
                             </Col>
                             <Col>
                                 <Card>
-                                    <img src="https://via.placeholder.com/28" />
+                                    <img alt="icon" src="https://via.placeholder.com/28" />
                                     <span>Ask Questions</span>
                                 </Card>
                             </Col>
