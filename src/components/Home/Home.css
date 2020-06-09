@@ -1,0 +1,19 @@
+.align-everything-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.align-everything-center .col{
+    padding: 15px;
+}
+.align-everything-center .card{
+    padding: 25px 15px 25px 5px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+}
+.align-everything-center .card img{
+    margin-right: 10px;
+}
+
